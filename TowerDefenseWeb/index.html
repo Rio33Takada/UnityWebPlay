@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Unity Web Player | TowerDefense</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
@@ -22,6 +23,15 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">TowerDefense</div>
       </div>
+      <footer id="asset-credits">
+        <strong>Asset Credits</strong><br>
+        Casual Monsters - LAYERLAB<br>
+        Reward Chest Pack - LAYERLAB<br>
+        Bolt 2D LittleWars Assets Pack - Goldmetal Studio<br>
+        Platform Tile Pack - Evolvers<br>
+        Landscape Tiles &amp; Birds (Free) - Kin Ng<br>
+        Used under Unity Asset Store License.
+      </footer>
     </div>
     <script>
       var canvas = document.querySelector("#unity-canvas");
@@ -90,10 +100,6 @@
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
 
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
         document.querySelector("#unity-container").className = "unity-mobile";
         canvas.className = "unity-mobile";
 
